@@ -1,0 +1,37 @@
+
+
+<div class="container table-responsive py-5">
+  <button class="btn btn-success mb-2" routerLink="/personne/add">Ajouter une Personne</button>
+  <table class="table table-bordered table-hover">
+    <thead class="bg-dark">
+      <tr>
+        <th scope="col">#id</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of personnes">
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.firstname }}</td>
+        <td>{{ item.lastname }}</td>
+        <td>{{ item.email }}</td>
+        <td>{{ item.age }}</td>
+        <td class="text-center">
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-ellipsis"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item text-info d-flex justify-content-around align-items-center" routerLink="/personne/update/{{item.id}}">Mis a jour <i class="fa-regular fa-pen-to-square"></i></a></li>
+              <li><a class="dropdown-item text-danger d-flex justify-content-around align-items-center" (click)="deletePersonne(item.id)">Supprimé <i class="fa-regular fa-trash-can"></i></a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>

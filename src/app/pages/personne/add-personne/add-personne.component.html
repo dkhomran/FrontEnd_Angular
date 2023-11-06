@@ -1,0 +1,35 @@
+<div class="main-header">
+  <div class="main-title text-center p-3 text-danger">
+    <h1>Ajouter un nouveau utilisateur</h1>
+  </div>
+  <div class="d-flex justify-content-center">
+    <form class="w-50">
+      <input [(ngModel)]="personne.firstname"
+             type="text"
+             id="firstname"
+             name="firstname"
+             class="form-control mb-2"
+             placeholder="Votre nom">
+      <input [(ngModel)]="personne.lastname"
+             type="text"
+             id="lastname"
+             name="lastname"
+             class="form-control mb-2"
+             placeholder="Votre Prenom">
+      <input [(ngModel)]="personne.age"
+             type="text"
+             id="age"
+             name="age"
+             class="form-control mb-2"
+             placeholder="Votre Age">
+      <input [(ngModel)]="personne.email"
+             type="email"
+             id="email"
+             name="email"
+             class="form-control mb-2"
+             placeholder="Votre Email">
+
+      <input (click)="addPersonne()" type="submit" value="Enregistrer" class="btn btn-success">
+    </form>
+  </div>
+</div>

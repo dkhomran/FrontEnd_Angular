@@ -1,0 +1,11 @@
+.footer_sign {
+  font-size: 14px;
+  text-align: center;
+  padding: 15px;
+  color: rgba(0, 0, 0, 0.623);
+  border-top: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.footer_sign span {
+  letter-spacing: 5px;
+}
