@@ -1,6 +1,14 @@
 # FrontEndAngular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+**FrontEndAngular** is a CRUD (Create, Read, Update, Delete) application developed using Angular version 16.2.6. This project is designed to manage person records through a user-friendly interface, leveraging a Symfony backend to handle data operations.
+
+## Features
+- **Create**: Add new person records.
+- **Read**: View existing person records.
+- **Update**: Edit information for existing person records.
+- **Delete**: Remove person records from the system.
+
+This application provides a seamless experience for users to manage person data effectively while demonstrating the capabilities of Angular and its integration with a Symfony backend.
 
 ## Development server
 
@@ -24,4 +32,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+To get more help on the Angular CLI use `ng help` or check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
